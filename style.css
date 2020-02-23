@@ -2,6 +2,10 @@
   margin: 0px;
 }
 
+body {
+}
+
+/* Header Property */
 header {
   background-color: #222629;
   width: 100%;
@@ -9,10 +13,6 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-.btn-github {
-  background-color: rgb(245, 245, 245);
 }
 
 .btn {
@@ -30,5 +30,30 @@ header {
   width: auto;
   height: auto;
   position: relative;
-  left: calc(100% - 43px);
+  /* If you change the size of the header-name you have to change this */
+  left: calc(100% - 330px);
+}
+
+#header-name {
+  /* If you change mostly anything in the buttons-icon you must change stuff in here */
+  margin-bottom: 0px;
+  float: left;
+  color: white;
+  margin-left: 30px;
+  margin-top: 22px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  /* All for shadow of the header */
+  -webkit-transition: text-shadow 0.5s ease-in-out;
+  -moz-transition: text-shadow 0.5s ease-in-out;
+  -o-transition: text-shadow 0.5s ease-in-out;
+  -ms-transition: text-shadow 0.5s ease-in-out;
+  transition: text-shadow 0.5s ease-in-out;
+
+  text-shadow: 5px 5px 3px #141414;
+}
+
+#header-name:hover {
+  text-shadow: -5px -5px 1px #141414;
 }
