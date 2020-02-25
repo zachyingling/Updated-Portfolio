@@ -7,7 +7,7 @@ body {
 
 /* Header Property */
 header {
-  background-color: #222629;
+  background-color: #0a1612;
   width: 100%;
   height: 100px;
   position: -webkit-sticky;
@@ -25,7 +25,7 @@ header {
   clear: both;
 }
 
-#buttons-icon {
+#buttons-icon-header {
   display: inline-block;
   width: auto;
   height: auto;
@@ -56,4 +56,101 @@ header {
 
 #header-name:hover {
   text-shadow: -5px -5px 1px #141414;
+}
+/* End of header styling */
+
+/* Start of main content styling */
+main {
+  background-image: url("background.jpg");
+  background-size: contain;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.border-box {
+  border: 3px solid white;
+  background-color: #03063d;
+}
+
+.projects-header {
+  color: white;
+  border-bottom: 2px solid white;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: calc(50% - 82.8px);
+}
+
+.project-image {
+  height: 180px;
+  width: 290px;
+  position: relative;
+}
+/* End of main content styling */
+
+/* Start of footer styling */
+footer {
+  width: 100%;
+  height: 160px;
+  background-color: #1a2930;
+}
+
+#contact-header,
+#about-header {
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: white;
+}
+
+li,
+#bio-text {
+  /* Gets a changed at different widths */
+  font-size: 1em;
+  color: white;
+}
+
+#self-photo {
+  border-radius: 100%;
+  float: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#bio-text {
+  text-indent: 30px;
+}
+
+#buttons-icon-footer {
+  margin-top: 19.6px;
+  margin-bottom: 19.6px;
+  margin-left: 20%;
+}
+
+/* Media Querys */
+@media screen and (max-width: 782px) {
+  li,
+  #bio-text {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  li,
+  #bio-text {
+    font-size: 0.6em;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  li,
+  #bio-text {
+    font-size: 0.4em;
+  }
 }
