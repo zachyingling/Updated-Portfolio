@@ -2,9 +2,6 @@
   margin: 0px;
 }
 
-body {
-}
-
 /* Header Property */
 header {
   background-color: #0a1612;
@@ -13,6 +10,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .btn {
@@ -51,11 +49,11 @@ header {
   -ms-transition: text-shadow 0.5s ease-in-out;
   transition: text-shadow 0.5s ease-in-out;
 
-  text-shadow: 5px 5px 3px #141414;
+  text-shadow: 5px 5px 1px black;
 }
 
 #header-name:hover {
-  text-shadow: -5px -5px 1px #141414;
+  text-shadow: -5px -5px 1px black;
 }
 /* End of header styling */
 
@@ -144,6 +142,12 @@ li,
   #bio-text {
     font-size: 0.8em;
   }
+
+  /* Skrink size of img */
+  .project-image {
+    height: 120px;
+    width: 230px;
+  }
 }
 
 @media screen and (max-width: 578px) {
@@ -151,11 +155,72 @@ li,
   #bio-text {
     font-size: 0.6em;
   }
+
+  .project-image {
+    height: 100px;
+    width: 190px;
+  }
 }
 
 @media screen and (max-width: 468px) {
   li,
   #bio-text {
     font-size: 0.4em;
+  }
+
+  .project-image {
+    height: 80px;
+    width: 160px;
+  }
+
+  #header-name {
+    font-size: 2rem;
+  }
+
+  #buttons-icon-header {
+    left: calc(100% - 270px);
+  }
+
+  .project-header {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 358px) {
+  .project-image {
+    height: 50px;
+    width: 90px;
+  }
+
+  .project-header {
+    font-size: 0.8rem;
+  }
+
+  .website,
+  .github {
+    font-size: 0.7rem;
+  }
+
+  #bio-text {
+    font-size: 0.4rem;
+  }
+
+  #self-photo {
+    height: 80px;
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 284px) {
+  #header-name {
+    font-size: 1.5rem;
+  }
+
+  #buttons-icon-header {
+    left: calc(100% - 220px);
+  }
+
+  #bio-text {
+    font-size: 0.25rem;
   }
 }
