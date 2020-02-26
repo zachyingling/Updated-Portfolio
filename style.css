@@ -2,6 +2,10 @@
   margin: 0px;
 }
 
+body {
+  width: 100%;
+}
+
 /* Header Property */
 header {
   background-color: #0a1612;
